@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(199, 192, 208);
+}
+.bg-img{
+    background-image: url(../images/djdjd.jpg);
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px 5px;
+    font-weight: 900;
+    font-size: 15px;
+    font-family: sans-serif;
+    
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    background-color: yellowgreen;
+    border-radius: 50%;
+    transition: 1s;
+    transform: rotate(260deg);
+}
+.circle:hover{
+    background-color: red;
+}
+@media screen and (max-width:425px) {
+    body{
+        background-color: chocolate;
+    }
+}
