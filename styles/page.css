@@ -11,6 +11,7 @@ body{
     font-weight: 900;
     font-size: 15px;
     font-family: sans-serif;
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
     
 }
 .circle{
@@ -24,6 +25,21 @@ body{
 .circle:hover{
     background-color: red;
 }
+.ib{
+    text-align: center;
+    width: 300px;
+    display: inline-block;
+    background-color: darkcyan;
+}
+.bib{
+    display: inline-block;
+}
+
+
+
+
+
+
 @media screen and (max-width:425px) {
     body{
         background-color: chocolate;
