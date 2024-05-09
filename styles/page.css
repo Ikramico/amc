@@ -21,6 +21,7 @@ body{
     border-radius: 50%;
     transition: 1s;
     transform: rotate(260deg);
+    position: relative;
 }
 .circle:hover{
     background-color: red;
@@ -30,14 +31,44 @@ body{
     width: 300px;
     display: inline-block;
     background-color: darkcyan;
+    position: fixed;
+    top: 50px;
+    right: 0px;
+    font-family: 'junki';
 }
 .bib{
     display: inline-block;
 }
+.stc{
+    position: sticky;
+    top: 0;
+}
+.sma{
+    border-radius: 50%;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.fon{
+     font-family: "Roboto Mono", monospace;
+}
+
+@font-face {
+    font-family: 'junki';
+    src: url('../Sixtyfour/Sixtyfour.ttf');
+}
 
 
 
-
+.icon{
+   color: red;
+   font-size: 25px;
+   transform:rotate(100deg);
+}
 
 
 @media screen and (max-width:425px) {
