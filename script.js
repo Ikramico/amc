@@ -19,8 +19,35 @@ if (a < 33) {
 else console.log('You are einstien');
 
 
+let num = 52;
+switch(true){
+    case (num < 33): 
+    console.log("fail");
+    break;
+    case (a > 33 && a < 40):
+        console.log("D");
 
-let x = 25, y= 92, z= 63;
+    default: console.log('You are einstien');
+}
+
+for(let i =1 ; i<11; i++){
+    console.log(
+        `31 x ${i} = ${31*i}`
+    )
+}
+
+let mu = 0;
+while(mu<11){
+    
+    console.log(`56 x ${mu} = ${56 * mu}`);
+    mu++;
+}
+do{
+    console.log(`43 x ${mu} = ${43 * mu}`);
+    mu++;
+}while(mu< 11);
+
+/* let x = 25, y= 92, z= 63;
 
 if(x<y && y<z){
     console.log('z is bigger and x is smaller');
@@ -62,4 +89,4 @@ else{
         console.log("m is bigger and n is smaller");
     }
     else console.log("m is bigger and p is smaller");
-}
+}*/
