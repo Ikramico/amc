@@ -79,9 +79,9 @@ jor(16);*/
 
 /**String */
 
-let str1 ='   Hello!';
-let str2 = 'How are you?   ';
-let totalStr = str1.concat(' ',str2);
+// let str1 ='   Hello!';
+// let str2 = 'How are you?   ';
+// let totalStr = str1.concat(' ',str2);
 //console.log(totalStr.toLowerCase().indexOf('how'));
 
 //console.log(totalStr.match('you'));
@@ -89,13 +89,13 @@ let totalStr = str1.concat(' ',str2);
 //console.log(totalStr.toLowerCase().replaceAll('h','L'));
 //console.log(totalStr.slice(6, 14));
 // console.log(totalStr.split(' '));
-let words = totalStr.trim().split(" ");
-console.log(words.length);
+//let words = totalStr.trim().split(" ");
+//console.log(words.length);
 
-let num1 = 10;
-let num2 = parseInt('10');
+//let num1 = 10;
+//let num2 = parseInt('10');
 
-console.log(num1+num2);
+//console.log(num1+num2);
 /*
 if(x<y && y<z){
     console.log('z is bigger and x is smaller');
@@ -138,3 +138,27 @@ else{
     }
     else console.log("m is bigger and p is smaller");
 }*/
+
+/**Array */
+
+let arr = [['Moni', ['Joni']], 'Tonmoy', 'Royal'];
+
+
+// console.log(arr.filter((word)=>word.length<4))
+//console.log(arr.map((word)=>word + ' Mia'))
+// console.log(arr.some((word)=>word.length>9))
+// console.log(arr.every((word)=>word.length>3))
+//arr.flat(Infinity).forEach((item)=> console.log(item))
+//console.log(arr.copyWithin(1,2,3));
+//console.log(arr.fill('Mahfuz',0));
+// arr.push('Mahfuz', 'Nam jani na');
+
+// arr.unshift('Omimoy');
+// console.log(arr);
+// arr.pop();
+// console.log(arr);
+// arr.shift();
+// console.log(arr);
+
+let arr1 =arr.flat()
+console.log(arr1);
