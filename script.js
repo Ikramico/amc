@@ -1,4 +1,4 @@
-let a = 82;
+/*let a = 82;
 let b ='hi, we are learning js'
 console.log(a);
 if (a < 33) {
@@ -47,8 +47,56 @@ do{
     mu++;
 }while(mu< 11);
 
-/* let x = 25, y= 92, z= 63;
 
+
+function oddEven(g){
+    if(g%2==0){
+        console.log(`${g} is even`);
+    }
+    else  console.log(`${g} is odd`);
+}
+
+let jorBijor = (g) =>
+	g % 2 == 0 ? console.log(`${g} is jor`) : console.log(`${g} is bijor`);
+
+
+oddEven(63);
+jorBijor(92);
+
+let suru = 0
+ jor=(u)=>{
+    if(u%2==0){ while(suru<u){
+            console.log(suru);
+            suru += 2;
+        }}
+        
+    
+    else console.log('Bijor');
+}
+
+jor(16);*/
+/* let x = 25, y= 92, z= 63;*/
+
+/**String */
+
+let str1 ='   Hello!';
+let str2 = 'How are you?   ';
+let totalStr = str1.concat(' ',str2);
+//console.log(totalStr.toLowerCase().indexOf('how'));
+
+//console.log(totalStr.match('you'));
+//console.log(totalStr.replace('are you', 'am I'));
+//console.log(totalStr.toLowerCase().replaceAll('h','L'));
+//console.log(totalStr.slice(6, 14));
+// console.log(totalStr.split(' '));
+let words = totalStr.trim().split(" ");
+console.log(words.length);
+
+let num1 = 10;
+let num2 = parseInt('10');
+
+console.log(num1+num2);
+/*
 if(x<y && y<z){
     console.log('z is bigger and x is smaller');
 }
