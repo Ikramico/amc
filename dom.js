@@ -14,7 +14,7 @@ let productsObj =[
 
     },
     {
-        id:5,
+        id:2,
         title: 'Forest Kie',
         price: 200,
         image: '../images/p5.jpg'
@@ -42,15 +42,34 @@ let productsObj =[
 
     }
 ]
+let slideImages = [
+    '../images/p1.jpg',
+    '../images/p2.jpg',
+    '../images/p3.jpg',
+    '../images/p4.jpg',
+    '../images/p5.jpg'
+    
+]
 
 let productDiv = document.querySelector('.products');
 productsObj.forEach((product) => {
-    productDiv.innerHTML += `
-    <div class="product-item">
-        <img src="${product.image}" alt="forest" class="product-image">
-        <h3 class="product-title">${product.title}</h3>
-        <p class="product-price">$${product.price} </p>
-        <button class="cart-button" type="button" onclick="addToCart()">Add to Cart</button>
-    </div>
+    let productItemDiv = document.createElement('div');
+    productItemDiv.classList.add('product-item');
+    productItemDiv.innerHTML = `
+    <img src="${product.image}" alt="forest" class="product-image">
+    <h3 class="product-title">${product.title}</h3>
+    <p class="product-price">$${product.price} </p>
     `;
+    productDiv.appendChild(productItemDiv);
+    // productDiv.innerHTML += `
+    // <div class="product-item">
+    //     <img src="${product.image}" alt="forest" class="product-image">
+    //     <h3 class="product-title">${product.title}</h3>
+    //     <p class="product-price">$${product.price} </p>
+    //     <button class="cart-button" type="button" onclick="addToCart()">Add to Cart</button>
+    // </div>
+    // `;
 })
+
+
+
