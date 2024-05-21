@@ -41,8 +41,7 @@ let showResults = (value) => {
 
     suggestions.forEach((element) => {
         sugList += `<li onclick='inputV(${titleArray.indexOf(element)})'> 
-  <span class='font-semibold'> ${element
-   }</span>
+  <span class='font-semibold'> ${element }</span>
   </li>`;
     });
     showSugs.innerHTML = `<ul class='bg-gray-50 p-3' id='suggestList' onclick='hider()'> ${sugList} </ul>`
@@ -52,15 +51,15 @@ let showResults = (value) => {
 
 let checkData =(val) =>{
    if (val == ''){
-    return '';
+    return [];
    }
    else{
     let transformedVal = val.toLowerCase();
 
     titleArray.filter((titl) => {
         
-        if(titl.match(transformedVal)){
-            return titl;
-        }});
+      return titl.includes(transformedVal);
+            
+        });
    }
 }
